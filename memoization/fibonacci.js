@@ -2,8 +2,8 @@ const fib = (n, memo = {}) => {
   if (n in memo) {
     return memo[n];
   }
-  if (n <= 2) {
-    return 1;
+  if (n <= 1) {
+    return n;
   } else {
     r = fib(n - 1, memo) + fib(n - 2, memo);
     memo[n] = r;
